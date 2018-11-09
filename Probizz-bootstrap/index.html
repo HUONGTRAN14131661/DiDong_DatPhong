@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>Thu Huong Blog</title>
+	<meta charset="utf-8">
+	<meta name="description" content="html">
+	<meta name="keyword" content="html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- important : the de responsive tren nhieu thiet bi -->
+	<link rel="stylesheet" type="text/css" href="font-awesome\css\font-awesome.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"> <!-- duong dan den bootstrap onl-->
+
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- luôn để cuối cùng-->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="background-menu d-block d-sm-block d-md-block d-lg-none d-xl-none"> <!-- hien thi o man hinh md do xuong -->
+			<div class="navbar-collapse offcanvas-collapse menu-body-right">
+		      <ul class="navbar-nav mr-auto d-md-none hhh-right">
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">mmm</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">SERVICES</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">PORTFOLIO</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">PRICING</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">OUR TEAM</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">CONTACT</a>
+		        </li>
+		      </ul>
+		    </div>	  
+		   <!--  <div class="overlay"></div>  : Tao truc tiep the hoac dung JS tao gian tiep-->
+		</div>
+	</div>
+	<header>
+		<div class="container header-container">
+			<div class="row">
+				<div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-2">
+					<span> <i class="fa fa-mobile"></i></span>
+					<span style="color: #fff;">+1 12345 67890</span>
+				</div>
+				<div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3 take-support-right">
+					<span><i class="fa fa-envelope"></i></span>
+					<span style="color: #fff;">support@example.com</span>
+				</div>
+				<div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-7 text-right header-icon d-none d-md-none d-lg-block d-xl-block">
+					<span style="color: #0a89ff;">Follow Us :</span>
+					<span><i class="fa fa-facebook"></i></span>
+					<span><i class="fa fa-twitter"></i></span>
+					<span><i class="fa fa-pinterest-square"></i></span>
+					<span><i class="fa fa-linkedin"></i></span>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid header-border"></div>
+		<div class="container header-container">
+			<div class="row">
+				<div class="col-12">
+					  <nav class="navbar navbar-expand-md navbar-light">
+					  	
+						    <a class="navbar-brand probizz-text" href="#">Probizz</a>
+						    <button id="click-show" class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+						      <span class="navbar-toggler-icon"></span>
+						    </button>
+
+							<div class="navbar-collapse offcanvas-collapse d-none d-sm-none">
+							      <ul class="navbar-nav ml-auto"> <!-- ml:margin-left -->
+							        <li class="nav-item">
+							          <a class="nav-link" href="#">ABOUT</a>
+							        </li>
+							        <li class="nav-item">
+							          <a class="nav-link" href="#">SERVICES</a>
+							        </li>
+							        <li class="nav-item">
+							          <a class="nav-link" href="#">PORTFOLIO</a>
+							        </li>
+							        <li class="nav-item">
+							          <a class="nav-link" href="#">PRICING</a>
+							        </li>
+							        <li class="nav-item">
+							          <a class="nav-link" href="#">OUR TEAM</a>
+							        </li>
+							        <li class="nav-item">
+							          <a class="nav-link" href="#">CONTACT</a>
+							        </li>
+							      </ul>
+						    </div>
+						
+					  </nav>
+				</div>
+			</div>
+		</div>	
+  <script>
+    $('#click-show').click(function(){
+    	$('.navbar-collapse').addClass('open'); // <them class open o the chua class navbar-collapse>
+    	$('.background-menu').append("<div class='overlay'></div>") // Them the div class overlay trong the div cha background
+    })
+    $('.menu-body-right').click(function(){
+    	$('.navbar-collapse').removeClass('open');
+    	$('.background-menu').find('.overlay').remove();
+    })
+  </script>	
+	</header>
+	<main>
+		<div class="container-fluid banner-container">
+			<div class="row hihi">
+					<div class="container main-banner-content">
+						<div class="container-banner-title text-center">
+							<p>We Love Make Things Amazing</p>
+						</div>
+						<div class="container-banner-text text-center">
+							<p>Maecenas class semper class semper sollicitudin lectus lorem iaculis imperdiet aliquam vehicula tempor auctor curabitur pede aenean ornare.</p>
+						</div>
+						<div class="container text-center">
+							<input class="btn btn-primary btn-about-us" type="button" value="About Us">
+							<input class="btn btn-primary btn-contact" type="button" value="Contact">
+						</div>
+					</div>
+			</div>
+		</div>
+		<div class="container-fluid the-row">
+			<div class="container">
+				<div class="row main-intro">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+						<div class="row">
+							<div class="col-xl-12 text-center">
+								<div class="border-main-intro">
+									<div class="main-intro-img">
+										<img src="img/great.png">
+									</div>
+									<div class="main-intro-title">
+										<span style="color: rgb(203, 52, 43);">Great</span><span> Strategy</span>
+									</div>
+									<div class="main-intro-text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat id ex, facilis provident delectus, tempore.</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+						<div class="row">
+							<div class="col-xl-12 text-center">
+								<div class="border-main-intro">
+									<div class="main-intro-img">
+										<img src="img/great.png">
+									</div>
+									<div class="main-intro-title">
+										<span style="color: rgb(203, 52, 43);">Great</span><span> Strategy</span>
+									</div>
+									<div class="main-intro-text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat id ex, facilis provident delectus, tempore.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+						<div class="row">
+							<div class="col-xl-12 text-center">
+								<div class="border-main-intro">
+									<div class="main-intro-img">
+										<img src="img/great.png">
+									</div>
+									<div class="main-intro-title">
+										<span style="color: rgb(203, 52, 43);">Great</span><span> Strategy</span>
+									</div>
+									<div class="main-intro-text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat id ex, facilis provident delectus, tempore.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid the-row">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 img-little">
+						<img src="img/about-bg.jpg">
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xl-6">
+						<p class="title-little-1">Who We Are</p>
+						<p class="title-little-2"><span style="color: rgb(203, 52, 43);">A Little Brief</span><span style="color: #0a89ff;"> About Us</span></p>
+						<div class="text-little">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed aliquam adipisci rem, natus similique vitae.</p>
+							<br>
+							<p>libero temporibus modi commodi molestias perspiciatis, enim dolorum! Magni tenetur error cum quaerat iste, dolorum explicabo fugiat! Pariatur rerum impedit assumenda at deleniti tempore voluptate, itaque modi et amet magni autem.</p>
+							<br>
+							<p>libero temporibus modi commodi molestias perspiciatis, enim dolorum! Magni tenetur error cum quaerat iste, dolorum explicabo fugiat! Pariatur rerum impedit assumenda at deleniti tempore voluptate, itaque modi et amet magni autem.</p>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid the-row">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="container text-title text-center">
+							<p class="title-1">What We Do</p>
+							<p class="title-2"><span style="color: rgb(203, 52, 43);">OUR</span> <span style="color: #0a89ff;">SERVICES</span></p>
+							<p class="text-services">We work with you to build comprehensive, thoughtful, and purpose-driven identities and experiences. Let’s talk about job.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row row-services">
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+						<div class="row">
+							<div class="col-xl-12 text-center">
+								<div class="border-main-services">
+									<div class="main-intro-img">
+										<img src="img/great.png">
+									</div>
+									<div class="main-services-title">
+										<span style="color: rgb(203, 52, 43);">Great</span><span> Strategy</span>
+									</div>
+									<div class="main-services-text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat id ex, facilis provident delectus, tempore.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+						<div class="row">
+							<div class="col-xl-12 text-center">
+								<div class="border-main-services">
+									<div class="main-intro-img">
+										<img src="img/great.png">
+									</div>
+									<div class="main-services-title">
+										<span style="color: rgb(203, 52, 43);">Great</span><span> Strategy</span>
+									</div>
+									<div class="main-services-text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat id ex, facilis provident delectus, tempore.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+						<div class="row">
+							<div class="col-xl-12 text-center">
+								<div class="border-main-services">
+									<div class="main-intro-img">
+										<img src="img/great.png">
+									</div>
+									<div class="main-services-title">
+										<span style="color: rgb(203, 52, 43);">Great</span><span> Strategy</span>
+									</div>
+									<div class="main-services-text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat id ex, facilis provident delectus, tempore.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+						<div class="row">
+							<div class="col-xl-12 text-center">
+								<div class="border-main-services">
+									<div class="main-intro-img">
+										<img src="img/great.png">
+									</div>
+									<div class="main-services-title">
+										<span style="color: rgb(203, 52, 43);">Great</span><span> Strategy</span>
+									</div>
+									<div class="main-services-text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat id ex, facilis provident delectus, tempore.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+						<div class="row">
+							<div class="col-xl-12 text-center">
+								<div class="border-main-services">
+									<div class="main-intro-img">
+										<img src="img/great.png">
+									</div>
+									<div class="main-services-title">
+										<span style="color: rgb(203, 52, 43);">Great</span><span> Strategy</span>
+									</div>
+									<div class="main-services-text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat id ex, facilis provident delectus, tempore.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+						<div class="row">
+							<div class="col-xl-12 text-center">
+								<div class="border-main-services">
+									<div class="main-intro-img">
+										<img src="img/great.png">
+									</div>
+									<div class="main-services-title">
+										<span style="color: rgb(203, 52, 43);">Great</span><span> Strategy</span>
+									</div>
+									<div class="main-services-text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat id ex, facilis provident delectus, tempore.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid the-row">
+			<div class="row">
+				<div class="col-12">
+					<div class="container text-title text-center">
+						<p class="title-1">Work Sample</p>
+						<p class="title-2"><span style="color: rgb(203, 52, 43);">OUR</span> <span style="color: #0a89ff;">PORTFOLIO</span></p>
+						<p class="text-services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum autem similique obcaecati non magni rerum maxime Officia.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="container text-center row-portfolio-button">
+					<button class="btn-1" onclick="tab('All')">All</button>
+					<button class="btn-2" onclick="tab('Design')">Design</button>
+					<button class="btn-2" onclick="tab('Development')">Development</button>
+					<button class="btn-2" onclick="tab('Print')">Print</button>
+				</div>
+				<div class="container">
+						<div id="All" class="row tab-row-portfolio">
+							<div class="row">
+								  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 row-portfolio-col-img">
+									  	<div class="portfolio-item">
+									  		<img src="img/port-01.jpg">
+									  		<i class="fa fa-eye"></i>
+									  	</div>				    
+								  </div>
+								  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 row-portfolio-col-img">
+									  	<div class="portfolio-item">
+									  		<img src="img/port-02.jpg">
+									  		<i class="fa fa-eye"></i>
+									  	</div>
+								  </div>
+								  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 row-portfolio-col-img">
+									  	<div class="portfolio-item">
+									  		<img src="img/port-03.jpg">
+									  		<i class="fa fa-eye"></i>
+									  	</div>
+								  </div>
+									  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 row-portfolio-col-img">
+									  	<div class="portfolio-item">
+									  		<img src="img/port-04.jpg">
+									  		<i class="fa fa-eye"></i>
+									  	</div>
+								  </div>
+								  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 row-portfolio-col-img">
+									  	<div class="portfolio-item">
+									  		<img src="img/port-05.jpg">
+									  		<i class="fa fa-eye"></i>
+									  	</div>
+								  </div>
+								  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 row-portfolio-col-img">
+									  	<div class="portfolio-item">
+									  		<img src="img/port-06.jpg">
+									  		<i class="fa fa-eye"></i>
+									  	</div>
+								  </div>
+						    </div>
+						</div>
+
+						<div id="Design" class="row tab-row-portfolio" style="display:none"> <!-- thuoc tinh display-none : khong hien thi khi chua nhap chuot-->
+							<div class="row">
+								  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 row-portfolio-col-img">
+									  	<div class="portfolio-item">
+									  		<img src="img/port-01.jpg">
+									  		<i class="fa fa-eye"></i>
+									  	</div>
+								  </div>
+								  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 row-portfolio-col-img">
+									  	<div class="portfolio-item">
+									  		<img src="img/port-04.jpg">
+									  		<i class="fa fa-eye"></i>
+									  	</div>
+								  </div>
+								  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 row-portfolio-col-img">
+									  	<div class="portfolio-item">
+									  		<img src="img/port-05.jpg">
+									  		<i class="fa fa-eye"></i>
+									  	</div>
+								  </div> 
+							</div>
+						</div>
+
+						<div id="Development" class="row tab-row-portfolio" style="display:none">
+							<div class="row">
+								  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 row-portfolio-col-img">
+									  	<div class="portfolio-item">
+									  		<img src="img/port-01.jpg">
+									  		<i class="fa fa-eye"></i>
+									  	</div>
+								  </div>
+								  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 row-portfolio-col-img">
+									  	<div class="portfolio-item">
+									  		<img src="img/port-02.jpg">
+									  		<i class="fa fa-eye"></i>
+									  	</div>
+								  </div>
+								  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 row-portfolio-col-img">
+									  	<div class="portfolio-item">
+									  		<img src="img/port-05.jpg">
+									  		<i class="fa fa-eye"></i>
+									  	</div>
+								  </div>
+								  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 row-portfolio-col-img">
+									  	<div class="portfolio-item">
+									  		<img src="img/port-06.jpg">
+									  		<i class="fa fa-eye"></i>
+									  	</div>
+								  </div>
+							</div>
+						</div>
+
+						<div id="Print" class="row tab-row-portfolio" style="display:none">
+							<div class="row">
+								  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 row-portfolio-col-img">
+									  	<div class="portfolio-item">
+									  		<img src="img/port-03.jpg">
+									  		<i class="fa fa-eye"></i>
+									  	</div>
+								  </div>
+								  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 row-portfolio-col-img">
+									  	<div class="portfolio-item">
+									  		<img src="img/port-04.jpg">
+									  		<i class="fa fa-eye"></i>
+									  	</div>
+								  </div>
+								  <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 row-portfolio-col-img">
+									  	<div class="portfolio-item">
+									  		<img src="img/port-06.jpg">
+									  		<i class="fa fa-eye"></i>
+									  	</div>
+								  </div>
+							</div>
+						</div>
+					</div>
+			</div>
+			<script>
+					function tab(tabrowportfolio) {
+					    var i;
+					    var x = document.getElementsByClassName("tab-row-portfolio");
+					    for (i = 0; i < x.length; i++) {
+					       x[i].style.display = "none";  
+					    }
+					    document.getElementById(tabrowportfolio).style.display = "block";  
+					}
+			</script>
+		</div>
+		<div class="container-fluid background-contact">
+			<div class="row hiuhiu">
+				<div class="container">
+					<div class="row row-contact">
+						<div class="col-12 col-sm-7 col-md-8 col-lg-8 col-xl-8 text-contact">
+							<p style="color: #fff;">We Provide All Kind Of Business Services. </p>
+							<p style="color:#0a89ff;">Do You Need Any Service ?</p>
+						</div>
+						<div class="col-12 col-sm-5 col-md-4 col-lg-4 col-xl-4 text-right take-button-contact-left">
+							<button class="btn btn-primary btn-contact-now" type="submit">Contact Now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid the-row">
+			<div class="row">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-we-are-best">
+							<div class="row">
+								<div class="col-12">
+									<p>Why Choose Our Company ?</p>
+									<P class="text-we-are-best-title"><span style="color: rgb(203, 52, 43); ">We Are Best </span><span style="color: #0a89ff;">Service Provider Company Of The Industry</span></P>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum labore minus dolore ab itaque animi sit, quae non quas architecto quaerat fugit in temporibus sequi laboriosam, repellat tempore consequuntur voluptatem.</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+									<p><i class="fa fa-check"></i>High Quality Service</p>
+									<p><i class="fa fa-check"></i>High Quality Service</p>
+									<p><i class="fa fa-check"></i>High Quality Service</p>
+									<p><i class="fa fa-check"></i>High Quality Service</p>
+								</div>
+								<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+									<p><i class="fa fa-check"></i>High Quality Service</p>
+									<p><i class="fa fa-check"></i>High Quality Service</p>
+									<p><i class="fa fa-check"></i>High Quality Service</p>
+									<p><i class="fa fa-check"></i>High Quality Service</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 we-are-the-best-img">
+							<img src="img/why-us-bg.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid the-row">
+			<div class="row">
+				<div class="container text-title text-center">
+					<p class="title-1">Get Touch With Us</p>
+					<p class="title-2"><span style="color: rgb(203, 52, 43);">SUBSCRIBE</span> <span style="color: #0a89ff;">NEWSLETTER</span></p>
+					<p class="text-services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum autem similique obcaecati non magni rerum maxime Officia.</p>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="input-group mb-3 newsletter">
+						  <input type="text" class="form-control" placeholder="Write Your Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+						  <div class="input-group-append">
+						    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscrise</button>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid the-row">
+			<div class="row">
+				<div class="col">
+					<div class="container text-title text-center">
+						<p class="title-1">Choose Best One</p>
+						<p class="title-2"><span style="color: rgb(203, 52, 43);">OUR</span> <span style="color: #0a89ff;">PRICING PLAN</span></p>
+						<p class="text-services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum autem similique obcaecati non magni rerum maxime Officia.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row pricing-plan">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 margin-bottom-standard">
+							<div class="col-standard text-center">
+								<p class="pricing-plan-standard">Standard</p>
+								<p class="pricing-plan-money">$ 12.99</p>
+								<ul>
+									<li>PDF Reports</li>
+									<li>Basic Quota</li>
+									<li>Five Brand Monitors</li>
+									<li>24/7 Free Support</li>
+									<li>Private Forums</li>
+								</ul>
+								<button type="button" class="btn btn-outline-primary btn-buy-now">Buy Now</button>
+
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 margin-bottom-standard">
+							<div class="col-standard text-center">
+								<p class="pricing-plan-standard">Standard</p>
+								<p class="pricing-plan-money">$ 12.99</p>
+								<ul>
+									<li>PDF Reports</li>
+									<li>Basic Quota</li>
+									<li>Five Brand Monitors</li>
+									<li>24/7 Free Support</li>
+									<li>Private Forums</li>
+								</ul>
+								<button type="button" class="btn btn-outline-primary btn-buy-now">Buy Now</button>
+
+							</div>
+						</div>
+							<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 margin-bottom-standard">
+							<div class="col-standard text-center">
+								<p class="pricing-plan-standard">Standard</p>
+								<p class="pricing-plan-money">$ 12.99</p>
+								<ul>
+									<li>PDF Reports</li>
+									<li>Basic Quota</li>
+									<li>Five Brand Monitors</li>
+									<li>24/7 Free Support</li>
+									<li>Private Forums</li>
+								</ul>
+								<button type="button" class="btn btn-outline-primary btn-buy-now">Buy Now</button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid background-contact">
+			<div class="row hiuhiu">
+				<div class="container">
+					<div class="row row-contact">
+						<div class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3 icon-report text-center">
+							<i class="fa fa-users"></i>
+							<h2 style="color: #fff;">1,280</h2>
+							<h6 style="color: #fff;">Total Client</h6>
+						</div>
+						<div class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3 icon-report text-center">
+							<i class="fa fa-star"></i>
+							<h2 style="color: #fff;">1,280</h2>
+							<h6 style="color: #fff;">Total Client</h6>
+						</div>
+						<div class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3 icon-report text-center">
+							<i class="fa fa-users"></i>
+							<h2 style="color: #fff;">1,280</h2>
+							<h6 style="color: #fff;">Total Client</h6>
+						</div>
+						<div class="col-6 col-sm-3 col-md-3 col-lg-3 col-xl-3 icon-report text-center">
+							<i class="fa fa-users"></i>
+							<h2 style="color: #fff;">1,280</h2>
+							<h6 style="color: #fff;">Total Client</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid the-row">
+			<div class="row">
+				<div class="col-12">
+					<div class="container text-title text-center">
+						<p class="title-1">We are expert</p>
+						<p class="title-2"><span style="color: rgb(203, 52, 43);">MEET OUR</span> <span style="color: #0a89ff;">CONSULTANT</span></p>
+						<p class="text-services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum autem similique obcaecati non magni rerum maxime Officia.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row row-consultant">
+				<div class="container">
+					<div class="row">
+						<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+							<div class="consultant-img">
+								<img src="img/team-01.jpg">
+								<div class="main-consultant-menu-hide">
+									<ul>
+										<li> <a href=""> <i class="fa fa-facebook"></i> </a></li>
+										<li> <a href=""> <i class="fa fa-twitter"></i> </a></li>
+										<li> <a href=""> <i class="fa fa-pinterest-square"></i> </a></li>
+										<li> <a href=""> <i class="fa fa-linkedin"></i> </a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="consultant-text">
+								<p class="consultant-text-name">Jhon Doe</p>
+								<p class="consultant-text-position">Developer</p>
+							</div>
+						</div>
+						<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+							<div class="consultant-img">
+								<img src="img/team-01.jpg">
+								<div class="main-consultant-menu-hide">
+									<ul>
+										<li> <a href=""> <i class="fa fa-facebook"></i> </a></li>
+										<li> <a href=""> <i class="fa fa-twitter"></i> </a></li>
+										<li> <a href=""> <i class="fa fa-pinterest-square"></i> </a></li>
+										<li> <a href=""> <i class="fa fa-linkedin"></i> </a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="consultant-text">
+								<p class="consultant-text-name">Jhon Doe</p>
+								<p class="consultant-text-position">Developer</p>
+							</div>
+						</div>
+						<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+							<div class="consultant-img">
+								<img src="img/team-01.jpg">
+								<div class="main-consultant-menu-hide">
+									<ul>
+										<li> <a href=""> <i class="fa fa-facebook"></i> </a></li>
+										<li> <a href=""> <i class="fa fa-twitter"></i> </a></li>
+										<li> <a href=""> <i class="fa fa-pinterest-square"></i> </a></li>
+										<li> <a href=""> <i class="fa fa-linkedin"></i> </a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="consultant-text">
+								<p class="consultant-text-name">Jhon Doe</p>
+								<p class="consultant-text-position">Developer</p>
+							</div>
+						</div>
+						<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+							<div class="consultant-img">
+								<img src="img/team-01.jpg">
+								<div class="main-consultant-menu-hide">
+									<ul>
+										<li> <a href=""> <i class="fa fa-facebook"></i> </a></li>
+										<li> <a href=""> <i class="fa fa-twitter"></i> </a></li>
+										<li> <a href=""> <i class="fa fa-pinterest-square"></i> </a></li>
+										<li> <a href=""> <i class="fa fa-linkedin"></i> </a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="consultant-text">
+								<p class="consultant-text-name">Jhon Doe</p>
+								<p class="consultant-text-position">Developer</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid the-row">
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="col-12">
+						<div class="container text-title text-center">
+							<p class="title-1">Our Client Reviews</p>
+							<p class="title-2"><span style="color: rgb(203, 52, 43);">OUR </span> <span style="color: #0a89ff;">TESTIMONIALS</span></p>				
+
+							<section class="regular slider">
+							    <div>
+
+							      	<div class="border-row-testimonials">
+										<i class="fa fa-quote-left"></i>
+										<p class="text-3-testimonials">We work with you to build comprehensive, thoughtful, and purpose-driven identities and experiences. Let’s talk about job.</p>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow;"></i>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow;"></i>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow;"></i>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow;"></i>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow;"></i>
+										<p style="margin-top: 20px;">hgdhfgq</p>
+									</div>								
+							    </div>
+							    <div>
+							      	<div class="border-row-testimonials">
+										<i class="fa fa-quote-left"></i>
+										<p class="text-3-testimonials">We work with you to build comprehensive, thoughtful, and purpose-driven identities and experiences. Let’s talk about job.</p>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow; "></i>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow;"></i>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow;"></i>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow;"></i>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow;"></i>
+										<p style="margin-top: 20px;">jshd</p>
+									</div>
+							    </div>
+							    <div>
+							      	<div class="border-row-testimonials">
+										<i class="fa fa-quote-left"></i>
+										<p class="text-3-testimonials">We work with you to build comprehensive, thoughtful, and purpose-driven identities and experiences. Let’s talk about job.</p>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow;"></i>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow;"></i>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow;"></i>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow;"></i>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow;"></i>
+										<p style="margin-top: 20px;">jada</p>
+									</div>
+							    </div>
+							    <div>
+							      	<div class="border-row-testimonials">
+										<i class="fa fa-quote-left"></i>
+										<p class="text-3-testimonials">We work with you to build comprehensive, thoughtful, and purpose-driven identities and experiences. Let’s talk about job.</p>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow;"></i>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow;"></i>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow;"></i>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow;"></i>
+										<i class="fa fa-star" style="margin-top: 20px;color: yellow;"></i>
+										<p style="margin-top: 20px;">jshdsdsd</p>
+									</div>
+							    </div>
+					  		</section>
+					    	<section class="center slider">
+							    <div>
+							      <img src="img/customer.png">
+							    </div>
+							    <div>
+							      <img src="img/customer.png">
+							    </div>
+							    <div>
+							      <img src="img/customer.png">
+							    </div>
+							    <div>
+							      <img src="img/customer.png">
+							    </div>				    
+					    	</section>
+							<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+							<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+							<script type="text/javascript">
+							    $(document).on('ready', function() {
+							    	$(".regular").slick({
+								        dots: false, /* lam mat dau cham chay slide*/
+								        infinite: true,
+								        slidesToShow: 1,
+								        slidesToScroll: 1,
+								        fade:true, /*hieu ung slide */
+								        arrows:false /* lam mat mui ten trai, phai*/
+								     });
+							      	$(".center").slick({
+								        dots: false,
+								        infinite: true,
+								        centerMode: true,
+								        centerPadding: '0px',
+								        slidesToShow: 3,
+								        slidesToScroll: 1,
+								        asNavFor:'.regular',
+								        responsive: [
+										    {
+										      breakpoint: 580,
+										      settings: {
+										      	centerMode: true,
+										      	centerPadding: '0px',
+										        slidesToShow: 1,
+										      }
+										    }
+										]
+							      	});
+							    });
+							</script>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="container-fluid the-row">
+			<div class="row">
+				<div class="col-12">
+					<div class="container text-title text-center">
+						<p class="title-1">Up To Date</p>
+						<p class="title-2"><span style="color: rgb(203, 52, 43);">OUR </span> <span style="color: #0a89ff;">LATEST BLOG</span></p>
+						<p class="text-services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum autem similique obcaecati non magni rerum maxime Officia.</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="row row-latest">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+							<div class="container">
+								<div class="row margin-col-latest">
+									<div class="col-xl-6 latest-img">
+										<img src="img/blog-01.jpg">
+									</div>
+									<div class="col-xl-6 latest-text">
+											<p class="latest-title">Group Discussion Benefits</p>
+											<p class="latest-date">Admin 15 Comments 22 Like</p>
+											<p class="latest-intro" style="color: #777777;">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+											<p class="latest-link">
+												<span class="readmore"><a href="">Read More</a></span>
+												<span class="date"><a href="">26 Mar 2018</a></span>
+											</p>
+									</div>
+								
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+							<div class="container">
+								<div class="row margin-col-latest">
+									<div class="col-xl-6 latest-img">
+										<img src="img/blog-01.jpg">
+									</div>
+									<div class="col-xl-6 latest-text">
+											<p class="latest-title">Group Discussion Benefits</p>
+											<p class="latest-date">Admin 15 Comments 22 Like</p>
+											<p class="latest-intro" style="color: #777777;">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+											<p class="latest-link">
+												<span class="readmore"><a href="">Read More</a></span>
+												<span class="date"><a href="">26 Mar 2018</a></span>
+											</p>
+									</div>
+								
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+							<div class="container">
+								<div class="row margin-col-latest">
+									<div class="col-xl-6 latest-img">
+										<img src="img/blog-01.jpg">
+									</div>
+									<div class="col-xl-6 latest-text">
+											<p class="latest-title">Group Discussion Benefits</p>
+											<p class="latest-date">Admin 15 Comments 22 Like</p>
+											<p class="latest-intro" style="color: #777777;">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+											<p class="latest-link">
+												<span class="readmore"><a href="">Read More</a></span>
+												<span class="date"><a href="">26 Mar 2018</a></span>
+											</p>
+									</div>
+								
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+							<div class="container">
+								<div class="row margin-col-latest">
+									<div class="col-xl-6 latest-img">
+										<img src="img/blog-01.jpg">
+									</div>
+									<div class="col-xl-6 latest-text">
+											<p class="latest-title">Group Discussion Benefits</p>
+											<p class="latest-date">Admin 15 Comments 22 Like</p>
+											<p class="latest-intro" style="color: #777777;">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+											<p class="latest-link">
+												<span class="readmore"><a href="">Read More</a></span>
+												<span class="date"><a href="">26 Mar 2018</a></span>
+											</p>
+									</div>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-12 text-center">
+					<button type="button" class="btn btn-primary">Browse More</button>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid the-row">
+			<div class="row">
+				<div class="col-12">
+					<div class="container text-title text-center">
+						<p class="title-1">Need Any Help ?</p>
+						<p class="title-2"><span style="color: rgb(203, 52, 43);">CONTACT </span> <span style="color: #0a89ff;">WITH US</span></p>
+						<p class="text-services">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum autem similique obcaecati non magni rerum maxime Officia.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row row-help">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-6 col-xl-6 col-xl-6">
+							<div class="row padding-col-help">
+								<div class="col-6 col-sm-6 col-md-6 col-xl-6 col-xl-6">
+									<div class="row img-icon-help">
+										<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-12 text-center">
+											<i class="fa fa-location-arrow"></i>
+											<div class="col-help-address">
+												<p>23/4 Mount Avenue</p>
+												<p>New York, USA</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-6 col-sm-6 col-md-6 col-xl-6 col-xl-6">
+									<div class="row img-icon-help">
+										<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-12 text-center">
+											<i class="fa fa-location-arrow"></i>
+											<div class="col-help-address">
+												<p>23/4 Mount Avenue</p>
+												<p>New York, USA</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-6 col-sm-6 col-md-6 col-xl-6 col-xl-6">
+									<div class="row img-icon-help">
+										<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-12 text-center">
+											<i class="fa fa-location-arrow"></i>
+											<div class="col-help-address">
+												<p>23/4 Mount Avenue</p>
+												<p>New York, USA</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-6 col-sm-6 col-md-6 col-xl-6 col-xl-6">
+									<div class="row img-icon-help">
+										<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-12 text-center">
+											<i class="fa fa-location-arrow"></i>
+											<div class="col-help-address">
+												<p>23/4 Mount Avenue</p>
+												<p>New York, USA</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-6 col-xl-6 col-xl-6">
+							<form>
+							  	<div class="form-group">
+							    	<input type="email" class="form-control form-name" id="exampleFormControlInput1" placeholder="Name*">
+							  	</div>
+							  	<div class="form-group">
+							    	<input type="email" class="form-control form-name" id="exampleFormControlInput1" placeholder="Email*">
+							  	</div>
+							  	<div class="form-group">
+							    	<input type="email" class="form-control form-name" id="exampleFormControlInput1" placeholder="Subject">
+							  	</div>
+								<div class="form-group">
+								    <textarea class="form-control form-message" id="exampleFormControlTextarea1" rows="3" placeholder="Write Your Message"></textarea>
+								</div>
+							</form>
+
+							<div class="row">
+								<div class="col-xl-12 text-center">
+									<button type="button" class="btn btn-outline-primary">Submit</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container-fluid">
+			<div class="row padding-footer">
+				<div class="col-12">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 text-col-about">
+								<h4 style="color: #fff;">About Us</h4>
+								<h6 class="text-loreum">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quod quas tenetur accusantium nulla obcaecati ex veniam quia atque, necessitatibus.</h6>
+								<h6 style="color: #fff;">Subscribe Now</h6>
+								<div class="in-subscribe-container"> 
+									<input class="in-subscribe"></input>
+									<input class="btn-subscribe" type="submit" value="Subscribe"></input>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 text-col-about">
+								<h4 style="color: #fff;">Important Links</h4>
+								<div class="footer-menu">
+									<ul>
+										<li><i class="fa fa-chevron-right"></i><a href="">Terms and Condition</a></li>
+										<li><i class="fa fa-chevron-right"></i><a href="">Our Policy</a></li>
+										<li><i class="fa fa-chevron-right"></i><a href="">Copyright Notice</a></li>
+										<li><i class="fa fa-chevron-right"></i><a href="">Our Best Services</a></li>
+										<li><i class="fa fa-chevron-right"></i><a href="">Product Promotion Tips</a></li>
+										<li><i class="fa fa-chevron-right"></i><a href="">Business Financing</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 text-col-about">
+								<h4 style="color: #fff;">Latest News</h4>
+								<div class="row meo">
+									<div class="col-4 col-xl-4">
+										<img src="img/news-01.jpg">
+									</div>
+									<div class="col-8 col-xl-8">
+										<p class="footer-latest-title">Effective Marketing Ways</p>
+										<p class="footer-latest-date">28 Jun, 2017</p>
+									</div>
+								</div>
+
+								<div class="row meo">
+									<div class="col-4 col-xl-4">
+										<img src="img/news-01.jpg">
+									</div>
+									<div class="col-8 col-xl-8">
+										<p class="footer-latest-title">Effective Marketing Ways</p>
+										<p class="footer-latest-date">28 Jun, 2017</p>
+									</div>
+								</div>
+
+									<div class="row meo">
+									<div class="col-4 col-xl-4">
+										<img src="img/news-01.jpg">
+									</div>
+									<div class="col-8 col-xl-8">
+										<p class="footer-latest-title">Effective Marketing Ways</p>
+										<p class="footer-latest-date">28 Jun, 2017</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 text-col-about">
+								<h4 style="color: #fff;">Follow Us</h4>
+								<div class="row">
+									<div class="col-12 col-xl-12">
+										<p>We are happy to see you here.</p>
+										<div class="col-12 col-xl-12 text-center footer-icon">
+											<div class="row">
+												<div class="col-3 col-sm-3 col-md-6 col-lg-3 col-xl-3 margin-bottom-fa">
+													<span><i class="fa fa-facebook"></i></span>
+												</div>
+												<div class="col-3 col-sm-3 col-md-6 col-lg-3 col-xl-3">
+													<span><i class="fa fa-twitter"></i></span>
+												</div>
+												<div class="col-3 col-sm-3 col-md-6 col-lg-3 col-xl-3">
+													<span><i class="fa fa-pinterest-square"></i></span>
+												</div>
+												<div class="col-3 col-sm-3 col-md-6 col-lg-3 col-xl-3">
+													<span><i class="fa fa-linkedin"></i></span>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="container-fluid footer-bottom">
+			<div class="row">
+				<div class="col-xl-12 text-center">
+					<p><span>© Copy 2018. All Rights Reserved By </span><span style="color: #0a89ff;">CodeGlamour.</span></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
