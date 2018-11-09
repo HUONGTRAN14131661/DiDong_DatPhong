@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>Thu Huong Blog</title>
+	<meta charset="utf-8">
+	<meta name="description" content="html">
+	<meta name="keyword" content="html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- important : the de responsive tren nhieu thiet bi -->
+	<link rel="stylesheet" type="text/css" href="font-awesome\css\font-awesome.css">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"> <!-- duong dan den bootstrap onl-->
+
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- luôn để cuối cùng-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container-fluid header">
+			<div class="row">
+				<div class="col-2 col-sm-4 d-md-none ddddd"><!--  icon navbar hien thi o che do sm -->
+				    <button class="btn-bar"><i class="fa fa-bars"></i></button>
+				</div>
+				<div class="col-5 col-sm-4 col-md-2 header-left">
+					<img src="img/header-logo.png">
+				</div>
+				<div class="col-5 col-sm-4 col-md-10 header-right">
+					<div class="row">
+						<div class="col-lg-12 col-xl-12 text-right d-block d-sm-none d-md-none d-lg-block " style="position: relative;"> 
+							<i class="fa fa-phone"></i><button type="button" class="button btn-contact">1800 1125</button>
+						</div>
+						<div class="col-8 col-sm-4 col-md-12 col-lg-9 header-menu d-none d-sm-none d-md-block d-lg-block"> <!-- menu hien thi che do md lg xl -->
+							<ul class="menu">
+						    	<li><a href="./index.html" class="active-bg-menu">Trang Chu</a></li>
+						    	<li class="hover-sanpham">
+						    		<a href="#">San Pham <i class="fa fa-chevron-down"></i></a>
+								    <ul class="menu-child">
+								    	<li><a href="#">Yoosun Mama</a></li>
+								    	<li><a href="#">Yoosun Baby</a></li>
+								    </ul>
+						    	</li>
+						    	<li><a href="./randa.html">Ran Da</a></li>
+						    	<li><a href="#">Ham Da</a></li>
+						    	<li><a href="./danhsachnhathuoc.html">Danh Sach Nha Thuoc</a></li>
+						    </ul>
+					    	<script type="text/javascript">
+					    		$(".hover-sanpham").hover(function(){$(this).find(".menu-child").show();},function(){$(this).find(".menu-child").hide();})
+					    	</script>
+						</div>
+						<div class="col-12 col-sm-5 col-md-12 col-lg-3 d-none d-sm-none d-md-block d-lg-block text-right" style="align-self: center;"> <!-- form-timkiem -->
+						    <form class="form-inline my-2 my-lg-0">
+						      <input class="input-search" type="search" placeholder="Tim Kiem" aria-label="Search">
+						      <button class="btn-search" type="submit"><i class="fa fa-search"></i></button>
+						    </form>
+						</div>
+						<div class="col-4 col-sm-12 col-md-12 text-right d-none d-sm-block d-md-block d-lg-none" style="position: relative;align-self: center;"> <!-- sodienthoai -->
+							<i class="fa fa-phone"></i><button type="button" class="button btn-contact">1800 1125</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="container-fluid navbar-collapse offcanvas-collapse content-menu d-block d-sm-block d-md-none d-lg-none">
+	      <ul class="navbar-nav mr-auto bbbbb">
+			    <form class="form-inline my-2 my-lg-0 d-block d-sm-block d-md-none d-lg-none d-xl-none">
+		      		<input class="input-search" type="search" placeholder="Tim Kiem" aria-label="Search">
+		    	  	<button class="btn-search" type="submit"><i class="fa fa-search"></i></button>
+	   			 </form>
+		        <li class="nav-item active">
+		          <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Ran Da</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Ham Da</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Danh Sach Nha Thuoc</a>
+		        </li>
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
+		          <div class="dropdown-menu" aria-labelledby="dropdown01">
+		            <a class="dropdown-item" href="#">Yoosun Mama</a>
+		            <a class="dropdown-item" href="#">Yoosun Baby</a>
+		          </div>
+		        </li>
+	      </ul>
+		</div>
+		
+		<script type="text/javascript">
+		 	$(function () {
+		  		$('.btn-bar').on('click', function () {
+		    		$('.content-menu').toggleClass('open')
+		  })
+		})
+		</script>
+
+ 		<style type="text/css">
+			.open{
+				left: 0px;
+				transition: all 1s;
+			}
+		</style>
+	</header>
+	<main>
+		<div class="container-fluid main-1 main-slide">
+			  <section class="lazy slider mmmm" data-sizes="50vw">
+				    <div>
+						<div class="row">
+							<div class="col-4 img-main-1">
+								<img src="img/sanpham-srm.png">
+							</div>
+							<div class="col-6 main-slide-text">
+								<h1 class="main-1-name">Olive Oil</h1>
+								<p class="main-1-element">Chiết xuất từ thiên nhiên</p>
+								<h3 class="main-1-purpose">Giữ ẩm da, chống rạn</h3>
+							</div>
+							<div class="col-2 img-main-1">
+								<img src="img/oliu-main-1.png">
+							</div>
+						</div>
+				    </div>
+				    <div>
+						<div class="row">
+							<div class="col-4 img-main-1">
+								<img src="img/sanpham-srm.png">
+							</div>
+							<div class="col-6 main-slide-text">
+								<h1 class="main-1-name">Olive Oil</h1>
+								<p class="main-1-element">Chiết xuất từ thiên nhiên</p>
+								<h3 class="main-1-purpose">Giữ ẩm da, chống rạn</h3>
+							</div>
+							<div class="col-2 img-main-1">
+								<img src="img/oliu-main-1.png">
+							</div>
+						</div>
+				    </div>
+				    <div>
+						<div class="row">
+							<div class="col-4 img-main-1">
+								<img src="img/sanpham-srm.png">
+							</div>
+							<div class="col-6 main-slide-text">
+								<h1 class="main-1-name">Olive Oil</h1>
+								<p class="main-1-element">Chiết xuất từ thiên nhiên</p>
+								<h3 class="main-1-purpose">Giữ ẩm da, chống rạn</h3>
+							</div>
+							<div class="col-2 img-main-1">
+								<img src="img/oliu-main-1.png">
+							</div>
+						</div>	
+				    </div>
+				  </section>
+				  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+				  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+				  <script type="text/javascript">
+				    $(document).on('ready', function() {
+
+				      $(".lazy").slick({
+				        lazyLoad: 'ondemand', // ondemand progressive anticipated
+				        infinite: true,
+				        arrows: false,
+				        dots: true,
+				      });
+				    });
+				</script>
+		</div>
+		<div class="main-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-4 img-main-2">
+						<img src="img/main-2-sanpham-left.png">
+					</div>
+					<div class="col-8 text-center-main-2">
+						<div class="row">
+							<div class="col-12 text-justify">
+								<p>Yoosun mama là sản phẩm chuyên sâu giúp tăng độ đàn hồi của da, phòng và trị rạn da hiệu quả dành cho bà bầu và mẹ sau sinh. Được chiết xuất từ tinh dầu Jojoba, dầu bơ, dầu Oliu, dầu hoa cúc, chiết xuất rau má, D-panthenol và vitamin E, Yoosun mama không gây kích ứng da, không tác dụng phụ, không ảnh hưởng tới thai nhi cũng như chất lượng sữa ở mẹ đang nuôi con nhỏ.</p>
+							</div>
+							<div class="col-12 text-right">
+								<a href="#" class="btn btn-yoosun-mama">Yoosun Mama</a>
+							</div>
+						
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-8 text-center-main-2">
+						<div class="row">
+							<div class="col-12 text-justify">
+								<p>Yoosun baby là sản phẩm chuyên biệt giúp làm dịu vết hăm tã dành cho trẻ sơ sinh. Bằng sự kết hợp của tinh dầu bơ cùng tinh dầu hạnh nhân, vitamin E và các thành phần thiên nhiên khác, Yoosun Baby hứa hẹn sẽ mang đến cho các mẹ một loại kem trị hăm hiệu quả, an toàn và dịu nhẹ với làn da em bé.</p>		
+							</div>
+							<div class="col-12">
+								<a href="#" class="btn btn-yoosun-baby">Yoosun Baby</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-4 img-main-2 img-main-plus">
+						<img src="img/main-2-sanpham.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-randa">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center padding-main-randa-top">
+						<p class="main-randa-title">Ran Da</p>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-7 img-main-randa-left">
+						<div class="row">
+							<div class="col-12 col-md-6 col-lg-12 border-padding">
+								<div class="row main-randa-left">
+									<div class="col-4 img-main-randa">
+										<img src="img/main-3-img.png">
+									</div>
+									<div class="col-8">
+										<div class="row">
+											<div class="col-12">
+												<p class="title-main-randa">Cách trị rạn da cho bà bầu bằng tinh dầu thiên nhiên hiệu quả</p>
+												<p class="text-justify">Làm mẹ quả là một thiên chức mà bất cứ người phụ nữ nào cũng cảm thấy hạnh phúc dù có phải chịu nhiều đau đớn, vất vả và nhấ..</p>									
+											</div>
+											<div class="col-12 text-right padding-top-button">
+												<a href="#" class="btn btn-xemthem">Xem Them</a>
+											</div>
+										</div>
+
+									</div>
+								</div>							
+							</div>
+							<div class="col-12 col-md-6 col-lg-12 border-padding">
+								<div class="row main-randa-left">
+									<div class="col-4 img-main-randa">
+										<img src="img/main-3-img.png">
+									</div>
+									<div class="col-8">
+										<div class="row">
+											<div class="col-12">
+												<p class="title-main-randa">Rạn da sau sinh – nỗi khổ khó nói của nhiều bà mẹ trẻ</p>
+												<p class="text-justify">Không dám diện bikini, tự ti về cơ thể, mặc cảm trong chuyện chăn gối… đó là số ít trong những nỗi khổ khó nói của các bà mẹ trẻ bị rạn da sau sinh.</p>										
+											</div>
+											<div class="col-12 text-right padding-top-button">
+												<a href="#" class="btn btn-xemthem">Xem Them</a>
+											</div>
+										</div>
+
+									</div>
+								</div>							
+							</div>
+							<div class="col-12 col-md-6 col-lg-12 border-padding">
+								<div class="row main-randa-left">
+									<div class="col-4 img-main-randa">
+										<img src="img/main-3-img.png">
+									</div>
+									<div class="col-8">
+										<div class="row">
+											<div class="col-12">
+												<p class="title-main-randa">Mách mẹ 7 cách trị rạn da bụng không thể bỏ lỡ</p>
+												<p class="text-justify">Rạn da sau sinh là một trong những cơn ác mộng mà các mẹ phải đối mặt sau khi trải qua lần vượt cạn đầy khó khăn. Với 7 cách trị rạn da bụng không thể bỏ lỡ sau đây hi vong sẽ ...</p>										
+											</div>
+											<div class="col-12 text-right padding-top-button">
+												<a href="#" class="btn btn-xemthem">Xem Them</a>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-12 d-lg-none border-padding">
+								<div class="row main-randa-left">
+									<div class="col-4 img-main-randa">
+										<img src="img/main-3-img.png">
+									</div>
+									<div class="col-8">
+										<div class="row">
+											<div class="col-12">
+												<p class="title-main-randa">Cách trị rạn da sau sinh tại nhà an toàn, hiệu quả</p>
+												<p class="text-justify">Sau khi sinh con, các mẹ hầu như không có thời gian chăm sóc, làm đẹp cho bản thân. Chính vì vậy, chúng tôi xin giới thiệu một số cách trị rạn da sau sinh tại nhà, hy vọng sẽ giúp chị em xóa bỏ được nỗi tự ti...</p>										
+											</div>
+											<div class="col-12 text-right padding-top-button">
+												<a href="#" class="btn btn-xemthem">Xem Them</a>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5 img-main-randa-right d-none d-sm-none d-md-none d-lg-block d-xl-block">
+						<div class="row">
+							<div class="col-12">
+								<img src="img/main-3-img.png">
+							</div>
+							<div class="col-12 padding-text-right">
+								<p class="title-main-randa">Cách trị rạn da sau sinh tại nhà an toàn, hiệu quả</p>
+								<p class="text-justify">Sau khi sinh con, các mẹ hầu như không có thời gian chăm sóc, làm đẹp cho bản thân. Chính vì vậy, chúng tôi xin giới thiệu một số cách trị rạn da sau sinh tại nhà, hy vọng sẽ giúp chị em xóa bỏ được nỗi tự ti...</p>
+							</div>
+							<div class="col-12 text-right padding-top-button">
+								<a href="#" class="btn btn-xemthem">Xem Them</a>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-hamda"> <!-- giong main-randa -->
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center padding-main-randa-top">
+						<p class="main-randa-title">Ham Da</p>
+					</div>
+					<div class="col-lg-5 img-main-randa-right d-none d-sm-none d-md-none d-lg-block d-xl-block">
+						<div class="row">
+							<div class="col-12">
+								<img src="img/main-3-img.png">
+							</div>
+							<div class="col-12 padding-text-right">
+								<p class="title-main-randa">Cách trị hăm da ở trẻ sơ sinh an toàn và nhanh nhất</p>
+								<p class="text-justify">Hăm da ở trẻ sơ sinh là hiện tượng phổ biến và gây không ít lo lắng cho các mẹ, nhất là những mẹ mới sinh con lần đầu. Bài viết này sẽ giúp các mẹ tìm hiểu về cách trị hăm da cho bé an toàn, hiệu quả nhanh chóng.</p>
+							</div>
+							<div class="col-12 text-right padding-top-button">
+								<a href="#" class="btn btn-xemthem-hamda">Xem Them</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-7 img-main-randa-left">
+						<div class="row">
+							<div class="col-12 col-md-6 col-lg-12 border-padding">
+								<div class="row main-randa-left">
+									<div class="col-4 img-main-randa">
+										<img src="img/main-3-img.png">
+									</div>
+									<div class="col-8">
+										<div class="row">
+											<div class="col-12">
+												<p class="title-main-randa">Cách xử lý khi trẻ bị hăm da ở háng hiệu quả nhanh</p>
+												<p class="text-justify">Hăm da ở háng khiến trẻ cực kì đau rát, khó chịu, trẻ quấy khóc, thậm chí bỏ bú và mệt lả. Vì vậy, các mẹ nên tham khảo những hướng xử lý nhanh nhất dưới đây giúp con yêu...</p>									
+											</div>
+											<div class="col-12 text-right padding-top-button">
+												<a href="#" class="btn btn-xemthem-hamda">Xem Them</a>
+											</div>
+										</div>
+
+									</div>
+								</div>								
+							</div>
+							<div class="col-12 col-md-6 col-lg-12 border-padding">
+								<div class="row main-randa-left">
+									<div class="col-4 img-main-randa">
+										<img src="img/main-3-img.png">
+									</div>
+									<div class="col-8">
+										<div class="row">
+											<div class="col-12">
+												<p class="title-main-randa">Cách trị hăm da ở trẻ sơ sinh an toàn và nhanh nhất</p>
+												<p class="text-justify">Hăm da ở trẻ sơ sinh là hiện tượng phổ biến và gây không ít lo lắng cho các mẹ, nhất là những mẹ mới sinh con lần đầu. Bài viết này sẽ giúp các mẹ tìm hiểu về cách trị hăm da...</p>										
+											</div>
+											<div class="col-12 text-right padding-top-button">
+												<a href="#" class="btn btn-xemthem-hamda">Xem Them</a>
+											</div>
+										</div>
+
+									</div>
+								</div>						
+							</div>
+							<div class="col-12 col-md-6 col-lg-12 border-padding">
+								<div class="row main-randa-left">
+									<div class="col-4 img-main-randa">
+										<img src="img/main-3-img.png">
+									</div>
+									<div class="col-8">
+										<div class="row">
+											<div class="col-12">
+												<p class="title-main-randa">Cách xử lý khi trẻ bị hăm da ở háng hiệu quả nhanh</p>
+												<p class="text-justify">Hăm da ở háng khiến trẻ cực kì đau rát, khó chịu, trẻ quấy khóc, thậm chí bỏ bú và mệt lả. Vì vậy, các mẹ nên tham khảo những hướng xử lý nhanh nhất dưới đây giúp con yêu...</p>									
+											</div>
+											<div class="col-12 text-right padding-top-button">
+												<a href="#" class="btn btn-xemthem-hamda">Xem Them</a>
+											</div>
+										</div>
+
+									</div>
+								</div>						
+							</div>
+							<div class="col-12 col-md-6 col-lg-12 d-lg-none border-padding">
+								<div class="row main-randa-left">
+									<div class="col-4 img-main-randa">
+										<img src="img/main-3-img.png">
+									</div>
+									<div class="col-8">
+										<div class="row">
+											<div class="col-12">
+												<p class="title-main-randa">Cách trị hăm da ở trẻ sơ sinh an toàn và nhanh nhất</p>
+												<p class="text-justify">Hăm da ở trẻ sơ sinh là hiện tượng phổ biến và gây không ít lo lắng cho các mẹ, nhất là những mẹ mới sinh con lần đầu. Bài viết này sẽ giúp các mẹ tìm hiểu về cách trị hăm da cho bé an toàn, hiệu quả nhanh chóng.</p>										
+											</div>
+											<div class="col-12 text-right padding-top-button">
+												<a href="#" class="btn btn-xemthem-hamda">Xem Them</a>
+											</div>
+										</div>
+
+									</div>
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-yoosun-dap">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<p class="main-yoosun-title">Me hoi Yoosun dap</p>
+					</div>
+				</div>
+				<div class="row slide-yoosun-dap">
+						<section class="regular slider">
+							    <div class="phongtohinh">
+									<img src="img/main-5-img.png">
+									<h6>Trẻ sơ sinh bị hăm ở cổ có dùng được Yoosun baby không?</h6>
+									<p class="text-justify">Con em được 2 tháng, cháu rất hay bị hăm ở cổ có dùng được Yoosun baby không? Yoosun tư vấn cách sử dụng giúp em với nhé!</p>
+									<div class="row text-right">
+										<div class="col-12 padding-top-button">
+											<a href="#" class="btn btn-xemthem-hamda">Xem Them</a>
+										</div>
+									</div>
+							    </div>
+							    <div class="phongtohinh">
+									<img src="img/main-5-img.png">
+									<h6>Trẻ sơ sinh bị hăm ở cổ có dùng được Yoosun baby không?</h6>
+									<p class="text-justify">Con em được 2 tháng, cháu rất hay bị hăm ở cổ có dùng được Yoosun baby không? Yoosun tư vấn cách sử dụng giúp em với nhé!</p>
+									<div class="row text-right">
+										<div class="col-12 padding-top-button">
+											<a href="#" class="btn btn-xemthem-hamda">Xem Them</a>
+										</div>
+									</div>
+							    </div>
+							    <div class="phongtohinh">
+									<img src="img/main-5-img.png">
+									<h6>Trẻ sơ sinh bị hăm ở cổ có dùng được Yoosun baby không?</h6>
+									<p class="text-justify">Con em được 2 tháng, cháu rất hay bị hăm ở cổ có dùng được Yoosun baby không? Yoosun tư vấn cách sử dụng giúp em với nhé!</p>
+									<div class="row text-right">
+										<div class="col-12 padding-top-button">
+											<a href="#" class="btn btn-xemthem-hamda">Xem Them</a>
+										</div>
+									</div>
+							    </div>
+							    <div class="phongtohinh">
+									<img src="img/main-5-img.png">
+									<h6>Trẻ sơ sinh bị hăm ở cổ có dùng được Yoosun baby không?</h6>
+									<p class="text-justify">Con em được 2 tháng, cháu rất hay bị hăm ở cổ có dùng được Yoosun baby không? Yoosun tư vấn cách sử dụng giúp em với nhé!</p>
+									<div class="row text-right">
+										<div class="col-12 padding-top-button">
+											<a href="#" class="btn btn-xemthem-hamda">Xem Them</a>
+										</div>
+									</div>
+							    </div>
+							    <div class="phongtohinh">
+									<img src="img/main-5-img.png">
+									<h6>Trẻ sơ sinh bị hăm ở cổ có dùng được Yoosun baby không?</h6>
+									<p class="text-justify">Con em được 2 tháng, cháu rất hay bị hăm ở cổ có dùng được Yoosun baby không? Yoosun tư vấn cách sử dụng giúp em với nhé!</p>
+									<div class="row text-right">
+										<div class="col-12 padding-top-button">
+											<a href="#" class="btn btn-xemthem-hamda">Xem Them</a>
+										</div>
+									</div>
+							    </div>
+						</section>
+						<script type="text/javascript">
+						    $(document).on('ready', function() {
+						      $(".regular").slick({
+						        dots: true,
+						        infinite: true,
+						        slidesToShow: 3,
+						        slidesToScroll: 3,
+						        arrows: true,
+						        prevArrow: '<button class="btn-left" aria-label="Previous" type="button"><i class="fa fa-chevron-left"></i></button>',
+               					nextArrow: '<button class="btn-right" aria-label="Next" type="button"><i class="fa fa-chevron-right"></i></button>',
+						        responsive: [
+							    {
+							      breakpoint: 768,
+							      settings: {
+							        slidesToShow: 1,
+							        slidesToScroll: 1,
+							        infinite: true,
+							        dots: true
+							      }
+							    }
+							  ]
+						      });
+
+						    });
+					</script>
+				</div>
+			</div>
+		</div>
+		<div class="main-gocketnoi">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h6>Goc Ket Noi</h6>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-7">
+						<div class="row main-randa-left-1">
+							<div class="col-4 img-main-randa">
+								<img src="img/main-3-img.png">
+							</div>
+							<div class="col-8">
+								<div class="row">
+									<div class="col-12">
+										<p class="title-main-randa">Cảm nhận sau 2 tuần dùng thử tuýp kem “nhỏ mà có võ”</p>
+										<p class="text-justify">Ai bảo cứ hàng ngoại mới là tốt, sau khi dùng thử tuýp Yoosun baby cho con, em tin rằng “nhỏ mà có võ” là có thật. Các mẹ có con thường xuyên bị hăm tã hãy trải nghiệm ngay sản phẩm Việt Nam uy tín này nhé!</p>									
+									</div>
+									<div class="col-12 text-right padding-top-button">
+										<button type="button" class="btn-xemthem">Xem Them</button>
+									</div>
+									<ul class="list-style-type-main-gocketnoi text-justify">
+										<li><i class="fa fa-circle"></i>Con hết hăm tã, mẹ thảnh thơi, con thỏa sức chơi</li>
+										<li><i class="fa fa-circle"></i>Bí kíp giữ “bờ mông” con láng mịn của mẹ Thu Hà</li>
+										<li><i class="fa fa-circle"></i>Tôi đã thoát khỏi “ác mộng” rạn da lúc mang thai nhờ tuyệt chiêu này</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-5">
+						<div class="video-1">
+							<img src="img/Vector-Smart-Object.png">
+							<!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/pBRrZO1GUbU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-about-us">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h6>Ve Chung Toi</h6>
+					</div>
+				</div>
+				<div class="row about-us-slide">
+					  <section class="regular-1 slider">
+						    <div>
+								<div class="hieuung-main-7">
+									<img src="img/main-7-img-1.png">
+								</div>
+						    </div>
+						    <div>
+								<div class="hieuung-main-7">
+									<img src="img/main-7-img-2.png">
+								</div>
+						    </div>
+						    <div>
+								<div class="hieuung-main-7">
+									<img src="img/main-7-img-2.png">
+								</div>
+						    </div>
+						    <div>
+								<div class="hieuung-main-7">
+ 									<iframe width="100%" height="163.14px" src="https://www.youtube.com/embed/pBRrZO1GUbU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+								</div>
+						    </div>
+						    <div>
+								<div class="hieuung-main-7">
+									<img src="img/main-7-img-1.png">
+								</div>
+						    </div>
+						    <div>
+								<div class="hieuung-main-7">
+									<img src="img/main-7-img-2.png">
+								</div>
+						    </div>
+						    <div>
+								<div class="hieuung-main-7">
+									<img src="img/main-7-img-2.png">
+								</div>
+						    </div>
+						    <div>
+								<div class="hieuung-main-7">
+ 									<iframe class="video" width="100%" height="163.14px" src="https://www.youtube.com/embed/pBRrZO1GUbU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+								</div>
+						    </div>
+					  </section>
+					 <script type="text/javascript">
+					    $(document).on('ready', function() {
+					      $(".regular-1").slick({
+					        dots: true,
+					        infinite: true,
+					        slidesToShow: 4,
+					        slidesToScroll: 1,
+			                arrows: true,
+			                prevArrow: '<button class="g-l btn-left" aria-label="Previous" type="button"><i class="fa fa-chevron-left"></i></button>',
+			                nextArrow: '<button class="g-r btn-right" aria-label="Next" type="button"><i class="fa fa-chevron-right"></i></button>',
+					        responsive: [
+							    {
+							      breakpoint: 992,
+							      settings: {
+							        slidesToShow: 3,
+							        slidesToScroll: 1,
+							        infinite: true,
+							        dots: true
+							      }
+							    },
+							    {
+							    	breakpoint: 768,
+							      	settings: {
+							        slidesToShow: 2,
+							        slidesToScroll: 1,
+							        infinite: true,
+							        dots: true
+							      }
+							    },
+							    {
+								    breakpoint: 552,
+							      	settings: {
+							        slidesToShow: 1,
+							        slidesToScroll: 1,
+							        infinite: true,
+							        dots: true
+							      }						    	
+							    }
+							  ]
+					      });
+					    });
+					</script>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container-fluid leuleu">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-8 footer-text-center">
+					<div class="container">
+						<div class="footer-text-left text-1">
+							<span>Lien He</span>
+							<span>|</span>
+							<span>Chinh Sach</span>
+							<p><i>Tac dung co the khac nhau tuy thuoc vao co dia cua nguoi dung</i></p>
+						</div>
+						<div class="footer-img-left img-2">
+							<img src="img/footer-logo.png">
+						</div>
+						<div class="footer-text">
+							<h5>CONG TY TNHH DAI BAC</h5>
+							<p>Địa chỉ: Số 11 đường Công nghiệp 4, KCN Sài Đồng B, Phường Thạch Bàn, Quận Long Biên, Hà Nội</p>
+							<p>Điện thoại: 043.7761445 - Fax: 043.7761448 </p>
+							<p>Website: daibac.com - Email: daibac@daibac.com</p>
+						</div>
+						<div class="footer-text">
+							<h5>Miền Nam</h5>
+							<p>Địa chỉ: 133/5 Hoà Hưng, Phường 12, Quận 10, TP Hồ Chí Minh</p>
+							<p>Điện thoại: 028 6265 0738/ 028 6264 6868</p>
+						</div>
+						<div class="footer-text">
+							<h5>Miền Trung</h5>
+							<p>Địa chỉ: 315 Ỷ Lan Nguyên Phi - Phường Hòa Cường Bắc - Quận Hải Châu - TP Đà Nẵng</p>
+							<p>Điện thoại: 0236 3638 222 Fax 0236 3638 224</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 img-footer-right d-none d-sm-none d-md-block">
+					<div class="container"> 
+						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fvascara%2F&tabs=timeline&width=340&height=150px&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="340" height="150px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+					</div>
+				</div>
+				<div class="btn-dathangonline-cha">
+					<div class="row">
+						<div class="col-12 header-meongao">
+							<a href="./dathangonline.html"><button class="btn-dathangonline-con">Dat hang online</button></a>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
