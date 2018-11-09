@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>Thu Huong Blog</title>
+	<meta charset="utf-8">
+	<meta name="description" content="html">
+	<meta name="keyword" content="html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- important : the de responsive tren nhieu thiet bi -->
+	<link rel="stylesheet" type="text/css" href="font-awesome\css\font-awesome.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"> <!-- duong dan den bootstrap onl-->
+
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- luôn để cuối cùng-->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container-fluid header-top">
+			<div class="row">
+				<div class="col-4 header-top-left">
+					<div class="btn-menu">
+						<button class="btn-bar"><i class="fa fa-bars"></i></button>
+
+					</div>
+				</div>
+				<div id="text" class="col-4 img-header-logo text-center">
+					<img src="img/missme-logo.png">
+				</div>
+				<div class="col-4 header-top-right">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-10 text-right header-top-right-child d-none d-sm-none d-md-none d-lg-block d-xl-block">
+								<button type="button" class="btn btn-contact">NHAN TU VAN | MUA HANG</button>
+							</div>
+							<div class="col-md-12 col-lg-2 img-contact-icon text-right">
+								<button type="button" class="btn btn-contact-icon"><img src="img/missme-contact-icon.png"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+					$(window).scroll(function(){
+						$(this).scrollTop()?$('#text').addClass('a'):$('#text').removeClass('a')
+					})
+				</script>
+				<style type="text/css">
+					.a{
+						margin-top: -300px;
+					}
+				</style>
+				<nav class="content-menu">
+
+					<div class="row">
+						<div class="col-10">
+							
+							<ul class="navbar-nav-1">
+								<button type="button" class="btn btn-contact-1 d-block d-sm-block d-md-block d-lg-none d-xl-none">NHAN TU VAN | MUA HANG</button>
+						        <li class="nav-item active">
+						          <a class="nav-link" href="#">Trang chủ</a>
+						        </li>
+						        <li class="nav-item">
+						          <a class="nav-link" href="#">Giới thiệu</a>
+						        </li>
+						        <li class="nav-item">
+						          <a class="nav-link" href="#">Dự án</a>
+						        </li>
+						        <li class="nav-item">
+						          <a class="nav-link" href="#">Dịch vụ</a>
+						        </li>
+					        </ul>
+
+						</div>
+						<div class="col-2 k-b-d-t">
+							<button class="btn-bar jjj"><i class="fa fa-times"></i></button>
+						</div>
+					</div>
+
+				  </nav>
+				<script>
+				$(document).ready(function(){
+				    $(".btn-bar").click(function(){
+				        $(".content-menu").show();
+				    });
+				    $('.btn-bar').click(function(){
+						$('.content-menu').addClass('open');
+					});
+					$('.jjj').click(function(){
+						$('.content-menu').removeClass('open');
+					})
+				});
+
+				</script>
+				<style type="text/css">
+					.open{
+						left: 0px;
+						transition: all 1s;
+					}
+				</style>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container main-top">
+			<div class="row">
+				<div class="col-12 text-center">
+					<p>Than the old you</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid main-slide">
+			<div class="row">
+				<img src="img/layer-nuoc.png">
+			</div>
+		</div>
+		<div class="container-fluid main-banner">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-4 banner-text-left text-right d-none d-sm-none d-md-block d-lg-block d-xl-block">
+					<div class="container text-center-lg">
+						<h1 class="khoangthan-name">Khoáng thần Mistmi</h1>
+						<p class="khoangthan-text">Là một sản phẩm dựa trên công trình nghiên cứu đạt giải Nobel Hóa Học 2003 của Peter Agre đồng thời áp dụng công nghệ tiên tiến từ Singapore</p>
+						<button type="button" class="btn btn-timhieu">TIM HIEU THEM</button>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 banner-text-center">
+					<img src="img/missme-product.png">
+				</div>
+				<div class="col-12 col-sm-12 col-md-4 banner-text-right">
+					<div class="container text-center-lg">
+						<h1 class="giosudung-name">1 Gio Su Dung</h1>
+						<h1 class="tuoitrehoa-name">6 tuoi tre hoa*</h1>
+						<div class="tuoitrehoa-text">
+							<p>Kết quả phụ thuộc vào cơ địa của mỗi người</p>
+							<P>	* Kết quả đã được kiểm nghiệm sau khi sử dụng khoáng thần Mistmi liên tục trong một giờ</p>
+						</div>
+						<div class="row text-center">
+							<div class="col-12 btn-timhieu-center">
+								<button type="button" class="btn btn-timhieu d-block d-sm-block d-md-none d-lg-none d-xl-none">TIM HIEU THEM</button>
+							</div>
+						</div>
+									
+					</div>
+				</div>			
+			</div>
+		</div>
+		<div class="container-fluid main-slide-missme-about">
+			<div class="row">
+				<div class="container container-missme">
+					<div class="row">
+						<div class="col-12 missme-text-center">
+							<span class="line-style"></span>
+							<h1 class="about-missme-text">Ve Miss Me</h1>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!-- lam slide -->
+			<div class="row">
+				  <section class="lazy slider" data-sizes="50vw">
+						<div class="row display-flex-slide-missme">
+							<div class="col-lg-6 main-slide-left">
+								<div class="container">
+									<p>Công ty TNHH Miss Me là công ty liên doanh giữa 3 nước: Singapore – Việt Nam – Đài Loan, được thành lập năm 2017 với mong muốn mang lại một cuộc sống tốt đẹp cho cộng đồng, nơi mọi người thật sự quan tâm đến những giá trị về sức khỏe và làm đẹp từ các sản phẩm đạt tiêu chuẩn cao về chất lượng.</p>
+									<p>Hiện nay, Miss Me là đối tác chiến lược của nhiều “công ty xanh” tại thị trường châu Á. Chúng tôi là nhà sản xuất và phân phối độc quyền các dòng sản phẩm chính hãng về chăm sóc, bảo vệ sức khỏe và sắc đẹp tại thị trường Việt Nam.</p>
+									<P>Chúng tôi đang sở hữu 2 nhà máy sản xuất đạt chuẩn GMP-WHO, được đặt tại Singapore và Đài Bắc. Nguồn nguyên liệu sạch, đạt chuẩn hữu cơ là điều kiện tối thiểu trước khi đưa vào quy trình sản xuất và đóng gói khép kín, được quản lí nghiêm ngặt.</P>
+								</div>
+							</div>
+							<div class="col-lg-6 main-slide-right text-center">
+								<img src="img/missme-about1.png">
+							</div>
+						</div>
+						<div class="row display-flex-slide-missme">
+							<div class="col-lg-6 main-slide-left">
+								<div class="container">
+									<p>Ngày 26 tháng 01 năm 2018 MISS ME tổ chức đêm nhạc trao quà tết “Xuân Nghĩa Tình” tại TP.Tây Ninh với sự góp mặt của nhiều ca sĩ và khách mời nổi tiếng.</p>
+									<p>Hiện nay, Miss Me là đối tác chiến lược của nhiều “công ty xanh” tại thị trường châu Á. Chúng tôi là nhà sản xuất và phân phối độc quyền các dòng sản phẩm chính hãng về chăm sóc, bảo vệ sức khỏe và sắc đẹp tại thị trường Việt Nam.</p>
+									<P>Đêm nhạc được tài trợ bởi các doanh nghiệp, doanh nhân nổi tiếng và những mạnh thường quân giàu lòng nhân ái, mong muốn được san sẻ yêu thương với cộng đồng.</P>
+									<P class="xemthem"><a href="#">Xem Them >></a></P>
+								</div>
+							</div>
+							<div class="col-lg-6 main-slide-right text-center">
+								<img src="img/missme-about2.png">
+							</div>
+						</div>
+						<div class="row display-flex-slide-missme">
+							<div class="col-lg-6 main-slide-left">
+								<div class="container">
+									<p>Miss Me đồng hành cùng cuộc thi NÉT ĐẸP CÔNG SỞ 2017 với vai trò là nhà tài trợ.</p>
+									<p>Đồng hành cùng cuộc thi xuyên suốt từ đầu chương trình đến vòng chung kết, Miss Me hân hạnh được trở thành thương hiệu đại diện cho vòng thi mẫu ảnh của top 16 thí sinh dự thi với sản phẩm xịt khoáng Mistmi Nano Water.</p>
+									<P class="xemthem"><a href="#">Xem Them >></a></P>
+								</div>
+							</div>
+							<div class="col-lg-6 main-slide-right text-center">
+								<img src="img/missme-about1.png">
+							</div>
+						</div>
+				  </section>
+
+				  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+				  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+				  <script type="text/javascript">
+					    $(document).on('ready', function() {
+					      
+					      $(".lazy").slick({
+					        lazyLoad: 'ondemand', // ondemand progressive anticipated
+					        infinite: true,
+					        dots:true,
+					        autoplay: false,
+	               			autoplaySpeed: 3000,
+	               			arrows: true,
+	               			prevArrow: '<button class="slick-prev btn-left" aria-label="Previous" type="button">Previous</button>',
+                			nextArrow: '<button class="slick-next btn-right" aria-label="Next" type="button">Next</button>',
+                			fade: true,
+					      });
+					    });
+				  </script>
+			</div>					
+		</div>
+		<div class="container-fluid main-slide-product">
+			<div class="row">
+				<div class="container container-product text-center">
+					<div class="row">
+						<div class="col-12">
+							<span class="line-style"></span>
+							<h3 class="product-text">Cac San Pham Tieu Bieu Khac</h3>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="row padding-slide-product">
+
+				  <section class="lazy-1 slider d-none d-sm-none d-md-none d-lg-block d-xl-block" data-sizes="50vw">
+						<div class="text-center hover-visible-col">
+							<div class="img-product">
+								<img src="img/missme-product1.png">
+							</div>
+							<div class="star-product">
+								<i class="fa fa-star" style="color:#563d7c;" ng-if="star===0.5"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+							</div>
+							<h4 class="name-product">NƯỚC UỐNG MISTMI HP1</h4>
+							<p class="text-product">Hàng sắp về</p>
+							<button type="button" class="btn btn-product">XEM THEM</button>
+						</div>
+						<div class="text-center hover-visible-col">
+							<div class="img-product">
+								<img src="img/missme-product2.png">
+							</div>
+							<div class="star-product">
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+							</div>
+							<h4 class="name-product">NƯỚC UỐNG FASTZYME</h4>
+							<p class="text-product">Hàng sắp về</p>
+							<button type="button" class="btn btn-product">XEM THEM</button>
+						</div>
+						<div class="text-center hover-visible-col">
+							<div class="img-product">
+								<img src="img/tra-vitox (1).png">
+							</div>
+							<div class="star-product">
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+							</div>
+							<h4 class="name-product">TRÀ THẢI ĐỘC VI-TOX</h4>
+							<p class="text-product">Hàng sắp về</p>
+							<button type="button" class="btn btn-product">XEM THEM</button>
+						</div>
+						<div class="text-center hover-visible-col">
+							<div class="img-product">
+								<img src="img/missme-product2.png">
+							</div>
+							<div class="star-product">
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+							</div>
+							<h4 class="name-product">NƯỚC UỐNG FASTZYME</h4>
+							<p class="text-product">Hàng sắp về</p>
+							<button type="button" class="btn btn-product">XEM THEM</button>
+						</div>
+						<div class="text-center hover-visible-col">
+							<div class="img-product">
+								<img src="img/tra-vitox (1).png">
+							</div>
+							<div class="star-product">
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+							</div>
+							<h4 class="name-product">TRÀ THẢI ĐỘC VI-TOX</h4>
+							<p class="text-product">Hàng sắp về</p>
+							<button type="button" class="btn btn-product">XEM THEM</button>
+						</div>
+						<div class="text-center hover-visible-col">
+							<div class="img-product">
+								<img src="img/missme-product3.png">
+							</div>
+							<div class="star-product">
+								<i class="fa fa-star" style="color:#563d7c;" ng-if="star===0.5"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+								<i class="fa fa-star" style="color:#563d7c;"></i>
+							</div>
+							<h4 class="name-product">TRÀ GIẢM CÂN VI-FAST</h4>
+							<p class="text-product">Hàng sắp về</p>
+							<button type="button" class="btn btn-product">XEM THEM</button>
+						</div>
+				  </section>
+
+				  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+				  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+				  <script type="text/javascript">
+					    $(document).on('ready', function() {
+					      
+					      $(".lazy-1").slick({
+					        lazyLoad: 'ondemand', // ondemand progressive anticipated
+					        infinite: true,
+					        dots:true,
+					        autoplay: false,
+	               			autoplaySpeed: 3000,
+	               			slidesToShow: 3,
+	               			arrows: true,
+	               			prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
+                			nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
+                			// fade: true,
+					      });
+					    });
+					</script>
+			</div>
+			<div class="container">
+				<div class="row d-block d-sm-block d-md-block d-lg-none d-xl-none">
+					<div class="col-12 text-center hover-visible-col">
+						<div class="row">
+							<div class="col-6 z">
+								<div class="img-product">
+									<img src="img/missme-product1.png">
+								</div>
+							</div>
+							<div class="col-6 z text-left">
+								<div class="star-product">
+									<i class="fa fa-star" style="color:#563d7c;" ng-if="star===0.5"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+								</div>
+								<h4 class="name-product">NƯỚC UỐNG MISTMI HP1 sjdsds kdjskjd ksjdksjd</h4>
+
+								<p class="text-product">Hàng sắp về</p>
+							</div>
+							<div class="col-12">
+								<button type="button" class="btn btn-product">XEM THEM</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 text-center hover-visible-col">
+						<div class="row">
+							<div class="col-6 z">
+								<div class="img-product">
+									<img src="img/missme-product2.png">
+								</div>
+							</div>
+							<div class="col-6 z text-left">
+								<div class="star-product">
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+								</div>
+								<h4 class="name-product">NƯỚC UỐNG FASTZYME</h4>
+								<p class="text-product">Hàng sắp về</p>
+							</div>
+							<div class="col-12">
+								<button type="button" class="btn btn-product">XEM THEM</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 text-center hover-visible-col">
+						<div class="row">
+							<div class="col-6 z">
+								<div class="img-product">
+									<img src="img/tra-vitox (1).png">
+								</div>
+							</div>
+							<div class="col-6 z text-left">
+								<div class="star-product">
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+								</div>
+								<h4 class="name-product">TRÀ THẢI ĐỘC VI-TOX</h4>
+								<p class="text-product">Hàng sắp về</p>
+							</div>
+							<div class="col-12">
+								<button type="button" class="btn btn-product">XEM THEM</button>
+							</div>
+						</div>	
+					</div>
+					<div class="col-12 text-center hover-visible-col">
+						<div class="row">
+							<div class="col-6 z">
+								<div class="img-product">
+									<img src="img/missme-product2.png">
+								</div>
+							</div>
+							<div class="col-6 z text-left">
+								<div class="star-product">
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+								</div>
+								<h4 class="name-product">NƯỚC UỐNG FASTZYME</h4>
+								<p class="text-product">Hàng sắp về</p>
+							</div>
+							<div class="col-12">
+								<button type="button" class="btn btn-product">XEM THEM</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 text-center hover-visible-col">
+						<div class="row">
+							<div class="col-6 z">
+								<div class="img-product">
+									<img src="img/tra-vitox (1).png">
+								</div>
+							</div>
+							<div class="col-6 z text-left">
+								<div class="star-product">
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+								</div>
+								<h4 class="name-product">TRÀ THẢI ĐỘC VI-TOX</h4>
+								<p class="text-product">Hàng sắp về</p>
+							</div>
+							<div class="col-12">
+								<button type="button" class="btn btn-product">XEM THEM</button>
+							</div>
+						</div>	
+					</div>
+					<div class="col-12 text-center hover-visible-col">
+						<div class="row">
+							<div class="col-6 z">
+								<div class="img-product">
+									<img src="img/missme-product3.png">
+								</div>
+							</div>
+							<div class="col-6 z text-left">
+								<div class="star-product">
+									<i class="fa fa-star" style="color:#563d7c;" ng-if="star===0.5"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+									<i class="fa fa-star" style="color:#563d7c;"></i>
+								</div>
+								<h4 class="name-product">TRÀ GIẢM CÂN VI-FAST</h4>
+								<p class="text-product">Hàng sắp về</p>
+							</div>
+							<div class="col-12">
+								<button type="button" class="btn btn-product">XEM THEM</button>
+							</div>
+						</div>					
+					</div>
+				</div>	
+			</div>	
+		</div>
+	</main>
+	<footer>
+		<div class="container-fluid background-footer">
+			<div class="row">
+				<div class="col-12 col-md-5 text-footer-left">
+					<p style="font-weight: 600;">Công ty TNHH Miss Me</p>
+					<p>Toà nhà Mê Linh Point, 2 Ngô Đức Kế,</p> 
+					<p>Phường Bến Nghé, Quận 1, TP. Hồ Chí Minh</p>
+					<p><span>E-mail:</span><span><a href=""> info@missme.com.vn</a></span></p>
+					<p><span>Hotline:</span><span><a href=""> (+84) 28 226 888 33</a></span></p>
+				</div>
+				<div class="col-12 col-sm-12 col-md-3 img-footer-center text-center">
+					<img src="img/missme-logo-footer.png">
+				</div>
+				<div class="col-12 col-md-4 text-footer-right text-right">
+					<div class="footer-icon">
+						<a href=""><i class="fa fa-facebook"></i></a>
+						<a href=""><i class="fa fa-instagram"></i></a>
+						<a href=""><i class="fa fa-youtube"></i></a>
+					</div>
+					<p>© Copyright by Miss Me 2017</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>

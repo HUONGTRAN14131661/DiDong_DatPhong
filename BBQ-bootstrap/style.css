@@ -1,0 +1,370 @@
+*{
+	box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+a{
+	text-decoration: none;
+}
+a.btn{
+	text-decoration: none;
+}
+p{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+span{
+	margin-right: 5px;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	margin:0px;
+	color: black;
+}
+header{
+	float: left;
+	width: 100%;
+	background-color: black;
+	position: fixed;
+	z-index: 99;
+}
+.header-menu a{
+	font-size: 13px;
+}
+.header-edit{
+	padding: 10px 0px;
+}
+.header-logo img{
+	max-width: 100%;
+}
+.header-menu-contact{
+	align-self: center;
+	padding-top: 10px;
+}
+.header-menu li{
+	list-style-type: none;
+	display: inline-block;
+}
+.header-menu a{
+	text-decoration: none;
+	padding-right: 20px;
+	color: #C6C6C6; /*xam*/
+}
+.header-menu a:hover{
+	color: #F3E385; /*vang*/
+	transition: all 0.5s;
+}
+.btn-hotline{
+	font-weight: bold;
+	border-radius: 5px;
+	border:1px solid #C6C6C6;
+	background-color: transparent;
+	color: #C6C6C6;
+	padding: 5px 10px;
+}
+.btn-hotline:hover{
+	background-color: #F3E385;
+	color: black;
+	transition: all 0.5s;
+}
+main{
+	float: left;
+	width: 100%;
+	padding-top: 86px;
+}
+.main-slide img{
+	width: 100%;
+	height: 60vh;
+	object-fit: cover;
+}
+.next-1{
+	margin-right: -57px;
+}
+.prev-1{
+	margin-right: 70px;
+}
+.main-img-banggia img{
+	max-width: 100%;
+}
+.main-sunhome-bbq{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.main-sun-home-text h2{
+	font-weight: bold;
+}
+.main-sun-home-text p{
+	text-align: justify;
+}
+.main-sun-home-bbq img{
+	max-width: 100%;
+}
+.bcde{
+	overflow: hidden; /* hinh co kich thuoc co dinh*/
+}
+.main-sun-home-bbq img:hover{
+	transform: scale(1.2); /* phong to hinh nhung van trong kich thuoc co dinh*/
+	transition: all 1s;
+	
+}
+.main-img-thucdon{
+	padding-bottom: 50px;
+	padding-top: 50px;
+	background-color: black;
+}
+.main-img-thucdon img, .main-img-nhahang img{
+	padding-bottom: 20px;
+	max-width: 100%;
+}
+h1.main-thucdon-title{
+	color: #777;
+	padding-bottom: 20px;
+}
+p.main-thucdon-text{
+	color: #777;
+	padding-bottom: 40px;
+}
+.main-nhahang-text p{
+	color: #777;
+	padding-bottom: 40px;
+}
+.btn-thucdon{
+	border: 1px solid #777;
+	border-radius: 5px;
+	padding: 5px 15px;
+	font-weight: bold;
+	color: #777;
+	font-size: 18px;
+	background-color: transparent;
+}
+.fa-gift, .fa-search{
+	padding-right: 5px;
+}
+.main-img-nhahang{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+h1.main-nhahang-title{
+	color: black;
+	padding-bottom: 20px;
+}
+.mm img{
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+}
+.main-bg-dangki, .main-bg-datban{
+	background:url(img/banner-234.jpg);
+	background-size: 100%;
+}
+.main-dangki-text{
+	align-self: center;
+}
+.main-bg-dangki p{
+	color: #c0c0c0;
+	font-size: 18px;
+}
+.main-bg-datban h1, .main-bg-datban p{
+	color: #c0c0c0;
+	padding-bottom: 20px;
+}
+.bg-olay{
+	background-color: rgba(0, 0, 0, 0.84);
+}
+.padding-main-dangki{
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+.meomeo{
+	display: inherit;
+}
+.form-control{
+	border-radius: 20px;
+	background-color: rgba(255,255,255,0.2) !important;
+	margin-right: 10px;
+
+}
+.btn-primary{
+	color: black;
+	background-color: #F3E385;
+	border:1px solid #F3E385;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-size: 17px;
+	font-weight: bold;
+}
+.main-img-nhahang-2 img{
+	width: 100%;
+	height: 203px;
+	object-fit: cover; /* hinh to hon nhung k thay doi vi tri kich thuoc*/
+}
+.main-bg-datban-goiydatban .fa-chevron-right{
+	font-size: 10px;
+	font-weight: 10;
+	color: #7a9c59;
+	padding-right: 18px;
+}
+.main-bg-datban-goiydatban p{
+	border-bottom: 1px solid #ececec;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.btn-in{
+	padding: 5px 10px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.main-bg-datban-padding{
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+.lichdatgio span{
+	color: #ececec;
+	font-size: 17px;
+}
+input[type=checkbox], input[type=radio]{
+	margin-right: 13px;
+	margin-left: 5px;
+}
+.btn-datban{
+	margin-top: 20px;
+}
+span.wpcf7-list-item{
+	display: inline-block;
+}
+.img-slide img{
+	max-width: 100%;
+	height: 50px;
+}
+.img-slide{
+	padding:30px 0;
+}
+.slick-prev:before, .slick-next:before{
+	content: none;
+}
+.img-wr img{
+     filter: grayscale(100%);
+     -webkit-filter: grayscale(100%);
+     -moz-filter: grayscale(100%);
+     -ms-filter: grayscale(100%);
+     -o-filter: grayscale(100%);
+}
+.img-wr img:hover{
+	 filter:none;
+	 transition: all 1s;
+}
+footer{
+	float: left;
+	width: 100%;
+	background-color: black;
+	padding: 20px 0;
+}
+.footer-text{
+	position: relative;
+}
+.footer-text p{
+	color: #c0c0c0;
+	font-size: 12px;
+}
+.footer-img{
+	position: absolute;
+	left: 308px;
+}
+.footer-img img{
+	width: 100px;
+	height: auto;
+
+}
+.mg{
+	color: black;
+	font-size: 20px;
+	font-weight: 10;
+	padding-right: 10px;
+}
+@media(max-width: 1200px){
+	.header-menu ul{
+		padding-left: 0px;
+	}
+	.header-menu a{
+		padding-right: 15px;
+	}
+	main{
+		padding-top: 75px;
+	}
+}
+@media(max-width: 768px){
+	.header-edit .fa{
+		color: #fff;
+	}
+	.header-edit .col-3{
+		align-self: center;
+	}
+	.btn-bar{
+	background-color: transparent;
+	border-radius: 5px;
+	border:none;
+	}
+	.content-menu{
+		width: 50%;
+		top: 0;
+		left: -700px;
+		background: rgba(255,255,255,0.95);
+		position: fixed; /* co dinh main khong chay khi click menu-bar*/
+		/*background-color: #fff;*/ /*co backbground rgba roi k them background-color*/
+		/*background-color: #212529;*/
+		height: 100%;
+		transition: all 1s;
+	}
+	.content-menu ul{
+	padding-bottom: 200px;
+    padding-top: 200px;
+    text-align: center;
+    font-size: 18px;
+	}
+	.content-menu a{
+	text-decoration: none;
+	color: black;
+	}
+	.content-menu li{
+		list-style-type: none;
+	}
+	.content-menu .fa-times{
+		color: gray!important;
+		font-size: 20px;
+		margin-top: 32px;
+		margin-left: 24px;
+	}
+	.main-dangki-text p{
+		font-size: 13px;
+		padding-bottom: 10px;
+	}
+	main{
+		padding-top: 50px;
+	}
+	.meomeo{
+		display: grid;
+	}
+	.form-control{
+		margin-bottom: 10px;
+	}
+	.hhh{
+		padding-bottom: 20px;
+	}
+}
+@media(max-width: 576px){
+	.footer-res{
+		text-align: center!important;
+	}
+	.footer-img{
+		left: 10px;
+
+	}
+
+	.main-slide img{
+		height: 40vh!important;
+	}
+	.footer-img-2{
+		max-width: 100%;
+	}
+}

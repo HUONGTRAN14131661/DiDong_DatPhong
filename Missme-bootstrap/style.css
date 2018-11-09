@@ -1,0 +1,481 @@
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+p{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+span{
+	margin-right: 5px;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	margin:0px;
+	color: #6b6b6b;
+}
+header{
+	float: left;
+	width: 100%;
+	z-index: 99;
+    position: fixed;
+}
+.content-menu{
+	width: 50%;
+	top: 0;
+	left: -700px;
+	background: rgba(255,255,255,0.8);
+	position: fixed; /* co dinh main khong chay khi click menu-bar*/
+	/*background-color: #fff;*/ /*co backbground rgba roi k them background-color*/
+	/*background-color: #212529;*/
+	height: 100%;
+	transition: all 1s;
+}
+.overlay{
+	opacity: 0.4
+}
+.k-b-d-t{
+	padding-top: 53px;
+}
+.content-menu ul{
+	padding-bottom: 200px;
+    padding-top: 200px;
+    text-align: center;
+    font-size: 18px;
+}
+.content-menu a{
+	text-decoration: none;
+	color: black;
+}
+.content-menu li{
+	list-style-type: none;
+}
+.header-top{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.header-top-left, .header-top-right{
+	display: flex;
+	align-items: center;
+}
+.btn-menu{
+	padding-left: 20px;
+}
+.btn-bar{
+	background-color: transparent;
+	border-radius: 5px;
+	border:none;
+}
+.btn-bar .fa{
+	font-size: 20px;
+	color: #777777;
+	font-weight: 100;
+}
+.img-header-logo img{
+	width: 80px;
+	height: auto;
+}
+.img-contact-icon img{
+	width: 30px;
+}
+.btn-contact, .btn-contact-1{
+	color: #563d7c;
+	border-color: #563d7c;
+	background-color: transparent;
+	border-radius: 25px;
+	font-size: 15px;
+}
+.btn-contact-1{
+	font-size: 14px!important;
+}
+
+.btn-timhieu{
+	color: #fff;
+	border-color: #fff;
+	background-color: transparent;
+	border-radius: 25px;
+	font-size: 15px;
+}
+.btn-product{
+	color: black;
+	border-color: #777777;
+	background-color: transparent;
+	border-radius: 25px;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 20px;
+}
+.btn-contact:hover, .btn-timhieu:hover, .btn-product:hover, .btn-contact-1:hover{
+	background-color: #563d7c;
+	color: #fff;
+	transition: all 1s;
+}
+.btn-timhieu:hover{
+	border:none;
+}
+.btn-contact-icon{
+	background-color: transparent;
+}
+.header-top-right-child{
+	display: flex;
+    padding-right: 0px;
+    justify-content: flex-end;
+}
+main{
+	padding-top: 200px;
+	float: left;
+	width: 100%;
+}
+.main-top p{
+	font-family: 'Dancing Script', cursive;
+	font-size: 95px;
+	color: #555555;
+	font-weight: 400;
+}
+.main-slide img{
+	width: 100%;
+	height: 100%;
+}
+.main-banner{
+	background-color: rgb(239, 199, 179);
+}
+.banner-text-left, .banner-text-right{
+	color: #fff;
+	padding-top: 165px;
+}
+h1.khoangthan-name{
+	font-size: 53px;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 600;
+	padding-left: 40px;
+}
+p.khoangthan-text{
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+h1.tuoitrehoa-name{
+	font-size: 70px;
+	font-weight: 600;
+	font-family: 'Dancing Script', cursive;
+}
+h1.giosudung-name{
+	padding-top: 20px;
+}
+h1.tuoitrehoa-name{
+	padding-bottom: 20px;
+}
+.banner-text-center img{
+	max-width: 100%;
+}
+.main-slide-missme-about{
+	background-color: #EEEEEE;
+	padding-bottom: 40px;
+}
+.container-missme, .container-product{
+	padding-top: 30px;
+}
+.line-style{
+	width: 60px;
+	height: 3px;
+	background-color: #7159a2;
+    display: inline-block;
+    margin-bottom: 32px;
+}
+h1.about-missme-text, .h3.product-text{
+	font-weight: bold;
+	font-family: 'Merriweather', serif;
+}
+
+.main-slide-left p{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.main-slide-right{
+	display: flex;
+	align-items: center;
+}
+.main-slide-right img{
+	width: 100%;
+}
+.xemthem a{
+	text-decoration: none;
+	color: #6b6b6b;
+}
+.main-slide-product{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.star-product{
+	font-size: 40px;
+}
+.img-product img{
+	width: 100%;
+}
+.star-product, h4.name-product, p.text-product, .btn-product{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+p.text-product{
+	font-size: 25px;
+	color: #563d7c;
+	font-weight: 400;
+}
+.hover-visible-col{
+	padding-top: 20px;
+    padding-bottom: 40px;
+}
+.hover-visible-col:hover{
+	box-shadow: 0px 0px 30px #EEEEEE; /* do bong deu 4 goc*/
+	transition: all 1s;
+}
+footer{
+	float: left;
+	width: 100%;
+}
+.background-footer{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #EEEEEE;
+}
+.text-footer-left p{
+	line-height: 30px;
+}
+.img-footer-center img{
+	width: 80px;
+}
+.text-footer-right{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.footer-icon a{
+	text-decoration: none;
+}
+.footer-icon .fa{
+	width: 50px;
+	height: 50px;
+	font-size: 25px;
+	color: #fff;
+	background-color: #777777;
+	border-radius: 50%;
+	justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+.text-footer-right p{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* lam menu truot*/
+
+/* lam slide-banner*/
+.btn-left{
+	left: 15px;
+}
+.btn-right{
+	right: 15px;
+}
+.hover-visible-col{
+	max-width: 100%;
+}
+.display-flex-slide-missme{
+	padding-bottom: 70px;
+	display: flex!important;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.padding-slide-product{
+	padding-right: 100px;
+	padding-left: 100px;
+}
+.slider {
+    width: 100%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: 1;
+}
+
+.slick-current {
+  opacity: 1;
+}
+@media (max-width: 1200px){
+	h1.khoangthan-name{
+		font-size: 35px;
+	}
+	h1.tuoitrehoa-name{
+		font-size: 42px;
+	}
+	h1.giosudung-name{
+		font-size: 30px;
+	}
+	.text-center-lg{
+		text-align: center;
+	}
+	.banner-text-left, .banner-text-right{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.text-footer-left{
+		text-align: left!important;
+	}
+	.missme-text-center{
+		padding-left:80px;
+	}
+}
+@media (max-width: 992px){
+	h1.khoangthan-name{
+		padding-left: 0px;
+		font-size: 25px;
+	}
+	h1.tuoitrehoa-name{
+		font-size: 30px;
+	}
+	h1.giosudung-name{
+		font-size: 20px;
+	}
+	.tuoitrehoa-text p{
+		font-size: 10px;
+	}
+	.display-flex-slide-missme{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.star-product{
+		font-size: 30px;
+	}
+	h4.name-product{
+		font-size: 25px;
+	}
+	.img-product img{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.main-slide-right{
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+	.btn-left, .btn-right{
+		top: 10px;
+	}
+	.display-flex-slide-missme{
+		padding-bottom: 0px;
+	}
+	.main-slide-right img{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.btn-contact-1{
+		padding: 5px;
+		width: 100%;
+		height: auto;
+	}
+	.main-slide-left{
+		order: 2;
+	}
+	.main-slide-left{
+		order:1;
+	}
+	.z{
+		align-self: center; /* tu can giua so voi hinh ben canh */
+	}
+}
+@media (max-width: 768px){
+	.main-top p{
+		font-size: 65px;
+	}
+	h1.tuoitrehoa-name{
+		font-size: 40px;
+	}
+	h1.giosudung-name{
+		font-size: 45px;
+	}
+	.tuoitrehoa-text p{
+		font-size: 15px;
+	}
+	h4.name-product{
+		font-size: 13px;
+	}
+	p.text-product{
+		font-size: 13px;
+	}
+	.star-product{
+		font-size: 25px;
+	}
+	.img-product img{
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	.btn-product{
+		font-size: 15px;
+	}
+	.text-footer-left, .text-footer-right{
+		text-align: center!important;
+	}
+	.banner-text-center{
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+	.banner-text-right{
+		padding-top: 0px;
+	}
+	.btn-timhieu-center{
+		display: flex;
+		justify-content: center;
+	}
+	.missme-text-center{
+		text-align: center;
+	}
+	.display-flex-slide-missme{
+		margin: 0px;
+	}
+	.btn-contact-1{
+		width: 100%;
+	}
+
+}
+@media (max-width: 576px){
+	.main-top p{
+		font-size: 45px;
+	}
+	.background-footer{
+		text-align: center;
+	}
+
+	.content-menu{
+		width: 100%;
+	}
+	.btn-contact-1{
+		width: 100%;
+		font-size:10px;
+		white-space:inherit;
+	}
+	.k-b-d-t{
+		padding-left: 0px;
+	}
+}
